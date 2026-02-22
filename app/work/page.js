@@ -100,7 +100,7 @@ export default function WorkPage() {
           flexWrap: "wrap",
           borderTop: "1px solid rgba(44,44,44,0.10)",
           borderBottom: "1px solid rgba(44,44,44,0.10)",
-        }}>
+        }} className="work-nav-bar">
           {restaurants.map((r, i) => (
             <a
               key={r.slug}
@@ -219,6 +219,19 @@ export default function WorkPage() {
 
       <style>{`
         .work-nav-link:hover { opacity: 1 !important; color: #A08BA0 !important; }
+
+        @media (max-width: 640px) {
+          .work-nav-bar { display: grid !important; grid-template-columns: 1fr 1fr; }
+          .work-nav-link {
+            padding: 1rem 1.25rem !important;
+            border-right: none !important;
+            border-bottom: 1px solid rgba(44,44,44,0.10);
+            text-align: center;
+          }
+          .work-nav-link:nth-child(odd)  { border-right: 1px solid rgba(44,44,44,0.10) !important; }
+          .work-nav-link:nth-child(3),
+          .work-nav-link:nth-child(4)    { border-bottom: none; }
+        }
 
         /* Gallery image heights */
         .gallery-img                { height: clamp(200px, 28vw, 380px); }
