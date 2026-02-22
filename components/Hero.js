@@ -124,9 +124,9 @@ export default function Hero() {
         }
         @keyframes scroll-travel {
           0%   { transform: translateY(-100%); opacity: 0; }
-          20%  { opacity: 1; }
-          80%  { opacity: 1; }
-          100% { transform: translateY(250%); opacity: 0; }
+          15%  { opacity: 1; }
+          75%  { transform: translateY(100%); opacity: 1; }
+          100% { transform: translateY(100%); opacity: 0; }
         }
       `}</style>
     </section>
