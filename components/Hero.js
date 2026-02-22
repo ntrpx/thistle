@@ -44,7 +44,7 @@ export default function Hero() {
           height={1050}
           priority
           style={{
-            width: "clamp(320px, 52vw, 680px)",
+            width: "clamp(280px, 90vw, 680px)",
             height: "auto",
             filter: `contrast(100) brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0,0,0,0.7))`,
             marginBottom: "0.5rem",
