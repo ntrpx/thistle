@@ -168,7 +168,7 @@ export default function Navbar() {
       <style>{`
         @media (min-width: 768px) { .show-mobile { display: none !important; } }
         @media (max-width: 767px) { .hidden-mobile { display: none !important; } }
-        @media (max-width: 767px) { .nav-logo { height: 30px !important; } }
+        @media (max-width: 767px) { .nav-logo { height: 26px !important; } }
       `}</style>
     </header>
   );
