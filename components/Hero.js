@@ -100,7 +100,10 @@ export default function Hero() {
         opacity: 0.55,
         filter: "drop-shadow(0 1px 6px rgba(0,0,0,0.6))",
       }}>
-        <div style={{ width: "1px", height: "3rem", background: "#f7f1ee" }} />
+        {/* Track + travelling dot */}
+        <div style={{ position: "relative", width: "1px", height: "3rem", background: "rgba(247,241,238,0.25)" }}>
+          <div className="scroll-traveller" />
+        </div>
         <span style={{
           fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
           fontSize: "0.4375rem",
@@ -108,6 +111,24 @@ export default function Hero() {
           textTransform: "uppercase",
         }}>Scroll</span>
       </div>
+
+      <style>{`
+        .scroll-traveller {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1px;
+          height: 40%;
+          background: linear-gradient(to bottom, transparent, #f7f1ee, transparent);
+          animation: scroll-travel 1.8s ease-in-out infinite;
+        }
+        @keyframes scroll-travel {
+          0%   { transform: translateY(-100%); opacity: 0; }
+          20%  { opacity: 1; }
+          80%  { opacity: 1; }
+          100% { transform: translateY(250%); opacity: 0; }
+        }
+      `}</style>
     </section>
   );
 }
