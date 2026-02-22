@@ -50,6 +50,7 @@ export default function Navbar() {
             height={174}
             priority
             style={{ height: "22px", width: "auto" }}
+            className="nav-logo"
           />
         </Link>
 
@@ -167,6 +168,7 @@ export default function Navbar() {
       <style>{`
         @media (min-width: 768px) { .show-mobile { display: none !important; } }
         @media (max-width: 767px) { .hidden-mobile { display: none !important; } }
+        @media (max-width: 767px) { .nav-logo { height: 30px !important; } }
       `}</style>
     </header>
   );
