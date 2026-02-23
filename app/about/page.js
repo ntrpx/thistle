@@ -88,14 +88,6 @@ export default function AboutPage() {
           }} className="values-grid">
             {values.map(v => (
               <div key={v.title}>
-                <span style={{
-                  fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
-                  fontSize: "0.5rem",
-                  letterSpacing: "0.38em",
-                  color: "#a79db5",
-                  display: "block",
-                  marginBottom: "0.75rem",
-                }}>{v.n}</span>
                 <h3 className="heading-md" style={{ marginBottom: "0.5rem" }}>{v.title}</h3>
                 <div className="rule" />
                 <p className="body-text">{v.desc}</p>

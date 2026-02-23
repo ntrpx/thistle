@@ -149,7 +149,7 @@ export default function WorkPage() {
             }} className="section-header-grid">
               <div>
                 <span className="label">
-                  {r.index} / {r.name.toUpperCase()} · {r.location}
+                  {r.name.toUpperCase()} · {r.location}
                 </span>
                 <h2 className="heading-lg">{r.name}</h2>
               </div>
