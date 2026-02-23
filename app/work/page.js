@@ -107,7 +107,7 @@ export default function WorkPage() {
               href={`#${r.slug}`}
               style={{
                 fontFamily: "var(--font-inter), sans-serif",
-                fontSize: "0.5625rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
                 color: "#2C2C2C",
