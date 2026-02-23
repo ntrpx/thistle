@@ -31,7 +31,7 @@ export default function Footer() {
                 alt="Thistle Interiors"
                 width={1800}
                 height={1350}
-                style={{ height: "90px", width: "auto" }}
+                style={{ height: "110px", width: "auto" }}
               />
             </Link>
             <p style={{
