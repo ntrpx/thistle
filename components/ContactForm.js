@@ -21,6 +21,8 @@ const BORDER_IDLE = "rgba(71,92,68,0.22)";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading]     = useState(false);
+  const [error, setError]         = useState(null);
 
   if (submitted) {
     return (
@@ -52,7 +54,21 @@ export default function ContactForm() {
 
   return (
     <form
-      onSubmit={e => { e.preventDefault(); setSubmitted(true); }}
+      onSubmit={async e => {
+        e.preventDefault();
+        setLoading(true);
+        setError(null);
+        const fd = new FormData(e.target);
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(Object.fromEntries(fd)),
+        });
+        const data = await res.json();
+        setLoading(false);
+        if (data.error) { setError("Something went wrong. Please try again."); }
+        else { setSubmitted(true); }
+      }}
       style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
     >
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}
@@ -102,9 +118,15 @@ export default function ContactForm() {
       />
 
       <div>
-        <button type="submit" className="btn-outline">
-          Send Enquiry
+        <button type="submit" className="btn-outline" disabled={loading} style={{ opacity: loading ? 0.6 : 1 }}>
+          {loading ? "Sending…" : "Send Enquiry"}
         </button>
+        {error && <p style={{
+          fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
+          fontSize: "0.75rem",
+          color: "#b2a5a2",
+          marginTop: "1rem",
+        }}>{error}</p>}
       </div>
 
       <style>{`
