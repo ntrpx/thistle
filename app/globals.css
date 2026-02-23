@@ -198,7 +198,7 @@
     letter-spacing: 0.32em;
     text-transform: uppercase;
     color: #475c44;
-    opacity: 0.5;
+    opacity: 0.72;
     transition: opacity 0.3s, color 0.3s;
   }
   .footer-nav-link:hover { opacity: 1; color: #9ca991; }
@@ -209,7 +209,7 @@
     font-weight: 400;
     font-size: 0.875rem;
     color: #475c44;
-    opacity: 0.62;
+    opacity: 0.75;
     display: block;
     margin-bottom: 1.25rem;
     transition: color 0.3s, opacity 0.3s;
@@ -219,7 +219,7 @@
   /* Social icons */
   .social-icon {
     color: #475c44;
-    opacity: 0.4;
+    opacity: 0.6;
     transition: opacity 0.3s, color 0.3s;
   }
   .social-icon:hover { opacity: 1; color: #9ca991; }
@@ -229,7 +229,7 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
     color: #475c44;
-    opacity: 0.55;
+    opacity: 0.75;
     display: block;
     margin-bottom: 0.375rem;
     transition: opacity 0.3s, color 0.3s;

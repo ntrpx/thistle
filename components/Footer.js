@@ -39,7 +39,7 @@ export default function Footer() {
               fontWeight: 400,
               fontSize: "0.75rem",
               color: "#475c44",
-              opacity: 0.42,
+              opacity: 0.65,
               lineHeight: 1.75,
             }}>
               Thoughtful spaces,<br />naturally made.
@@ -85,7 +85,7 @@ export default function Footer() {
               fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
               fontSize: "0.75rem",
               color: "#475c44",
-              opacity: 0.55,
+              opacity: 0.75,
               lineHeight: 1.7,
               marginBottom: "0.875rem",
             }}>
@@ -93,8 +93,8 @@ export default function Footer() {
               Sacramento, CA
             </p>
 
-            <a href="tel:9168049271" className="footer-phone-link">
-              916.804.9271
+            <a href="tel:9167435820" className="footer-phone-link">
+              916.743.5820
             </a>
 
             <a href="mailto:hello@thistleinterior.com" className="footer-email-link"

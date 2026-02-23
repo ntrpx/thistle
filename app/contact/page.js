@@ -49,13 +49,13 @@ export default function ContactPage() {
 
               <div>
                 <span style={META_LABEL}>Phone</span>
-                <a href="tel:9168049271" style={{
+                <a href="tel:9167435820" style={{
                   fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
                   fontSize: "0.9375rem",
                   color: "#475c44",
                   transition: "color 0.3s",
                 }}>
-                  916.804.9271
+                  916.743.5820
                 </a>
               </div>
 
