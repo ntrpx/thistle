@@ -49,7 +49,7 @@ export default function Navbar() {
             width={1554}
             height={174}
             priority
-            style={{ height: "22px", width: "auto" }}
+            style={{ height: "28px", width: "auto" }}
             className="nav-logo"
           />
         </Link>
