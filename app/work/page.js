@@ -98,24 +98,24 @@ export default function WorkPage() {
         <div style={{
           display: "flex",
           flexWrap: "wrap",
-          borderTop: "1px solid rgba(44,44,44,0.10)",
-          borderBottom: "1px solid rgba(44,44,44,0.10)",
+          borderTop: "1px solid rgba(71,92,68,0.10)",
+          borderBottom: "1px solid rgba(71,92,68,0.10)",
         }} className="work-nav-bar">
           {restaurants.map((r, i) => (
             <a
               key={r.slug}
               href={`#${r.slug}`}
               style={{
-                fontFamily: "var(--font-inter), sans-serif",
+                fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
                 fontSize: "0.75rem",
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
-                color: "#2C2C2C",
+                color: "#475c44",
                 opacity: 0.5,
                 padding: "1rem 0",
                 paddingRight: i < restaurants.length - 1 ? "2.5rem" : "0",
                 paddingLeft: i > 0 ? "2.5rem" : "0",
-                borderRight: i < restaurants.length - 1 ? "1px solid rgba(44,44,44,0.10)" : "none",
+                borderRight: i < restaurants.length - 1 ? "1px solid rgba(71,92,68,0.10)" : "none",
                 transition: "opacity 0.3s, color 0.3s",
               }}
               className="work-nav-link"
@@ -218,7 +218,7 @@ export default function WorkPage() {
       ))}
 
       <style>{`
-        .work-nav-link:hover { opacity: 1 !important; color: #A08BA0 !important; }
+        .work-nav-link:hover { opacity: 1 !important; color: #9ca991 !important; }
 
         @media (max-width: 640px) {
           .work-nav-bar { display: grid !important; grid-template-columns: 1fr 1fr; }
